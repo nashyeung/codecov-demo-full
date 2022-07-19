@@ -13,15 +13,19 @@ def add():
 
 @app.route('/api/subtract', methods=['POST'])
 def subtract():
-    return operation('subtract', 2)
+    return operation('subtract', 3)
 
 @app.route('/api/multiply', methods=['POST'])
 def multiply():
-    return operation('multiply', 2)
+    return operation('multiply', 4)
 
 @app.route('/api/divide', methods=['POST'])
 def divide():
-    return operation('divide', 2)
+    return operation('divide', 6)
+    
+@app.route('/api/square', methods=['POST'])
+def square():
+    return operation('square', 6)
 
 def operation(method, num_factors):
     factors = []
