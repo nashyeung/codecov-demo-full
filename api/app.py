@@ -13,7 +13,7 @@ def add():
 
 @app.route('/api/subtract', methods=['POST'])
 def subtract():
-    return operation('subtract', 2)
+    return operation('subtract', 3)
 
 @app.route('/api/multiply', methods=['POST'])
 def multiply():
