@@ -21,7 +21,7 @@ def multiply():
 
 @app.route('/api/divide', methods=['POST'])
 def divide():
-    return operation('divide', 2)
+    return operation('divide', 6)
 
 def operation(method, num_factors):
     factors = []
