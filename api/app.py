@@ -17,7 +17,7 @@ def subtract():
 
 @app.route('/api/multiply', methods=['POST'])
 def multiply():
-    return operation('multiply', 2)
+    return operation('multiply', 4)
 
 @app.route('/api/divide', methods=['POST'])
 def divide():
