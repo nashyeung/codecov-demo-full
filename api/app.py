@@ -22,6 +22,10 @@ def multiply():
 @app.route('/api/divide', methods=['POST'])
 def divide():
     return operation('divide', 6)
+    
+@app.route('/api/square', methods=['POST'])
+def square():
+    return operation('square', 6)
 
 def operation(method, num_factors):
     factors = []
